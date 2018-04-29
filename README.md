@@ -7,20 +7,18 @@ These components can be independently used on your product.
 All the plans are listed on projects section.
 
 ## Principles
-------------
-⋅⋅⋅Loosly follows [atomic design](http://bradfrost.com/blog/post/atomic-web-design/).
+Loosly follows [atomic design](http://bradfrost.com/blog/post/atomic-web-design/).
 
 ## Styling
-------------
-Currently SASS with [css-modules](https://github.com/css-modules/css-modules)
-[Styled components](https://www.styled-components.com/) will be added in future
-Follow [BEM rules](http://getbem.com/) if not using dynamic styles
+- Currently SASS with [css-modules](https://github.com/css-modules/css-modules)
+- [Styled components](https://www.styled-components.com/) will be added in future
+- Follow [BEM rules](http://getbem.com/) if not using dynamic styles
 
 #### Every PR should
-------------
-⋅⋅⋅pass list
-⋅⋅⋅pass tests
-⋅⋅⋅be code reviewed by at least one core contributer
+- pass lint
+- pass tests
+- be code reviewed by at least by one core contributer
+- Every added component should have a [storybook](https://storybook.js.org/).
 
 #### References/Component Design Inspirations
-https://github.com/krasimir/react-in-patterns
+[https://github.com/krasimir/react-in-patterns](https://github.com/krasimir/react-in-patterns)
