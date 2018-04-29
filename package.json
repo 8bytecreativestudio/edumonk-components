@@ -11,7 +11,9 @@
     "eslint": "eslint --fix",
     "lint": "npm run eslint --fix --ext js --ext jsx --ext json .",
     "test": "jest",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{js,json,css,md}": ["prettier --write", "git add"]
@@ -26,12 +28,18 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.4",
+    "@storybook/addon-links": "^4.0.0-alpha.4",
+    "@storybook/addons": "^4.0.0-alpha.4",
+    "@storybook/react": "^4.0.0-alpha.4",
+    "babel-core": "6",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^7.0.0-beta.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
