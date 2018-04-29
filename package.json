@@ -1,0 +1,50 @@
+{
+  "name": "edumonk-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bipin Bhandari",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel start index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "eslint": "eslint --fix",
+    "lint": "npm run eslint --fix --ext js --ext jsx --ext json .",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
+  "dependencies": {
+    "autoprefixer": "^8.4.1",
+    "node-sass": "^4.9.0",
+    "postcss-modules": "^1.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.5",
+    "parcel-bundler": "^1.7.1",
+    "prettier": "^1.12.1"
+  }
+}
