@@ -19,7 +19,7 @@ class HomePage extends React.Component {
       <div className={styles.container}>
         Test
         <InputBox value={value} onChange={this.onChange} />
-      </div>;
+      </div>
     );
   }
 }
