@@ -8,6 +8,10 @@
     "start": "parcel start index.html",
     "watch": "parcel watch index.html",
     "build": "parcel build index.html",
+    "fix:assets": "yarn prettier --write",
+    "fix:code": "yarn test:code --fix",
+    "fix": "yarn fix:code && yarn fix:assets",
+    "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
     "eslint": "eslint --fix",
     "lint": "npm run eslint --fix --ext js --ext jsx --ext json .",
     "test": "jest",
@@ -42,17 +46,18 @@
     "babel-runtime": "^7.0.0-beta.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.19.1",
+    "eslint": "4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "2.9.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "lint-staged": "^7.0.5",
     "parcel-bundler": "^1.7.1",
-    "prettier": "^1.12.1"
+    "prettier": "1.12.1"
   }
 }
