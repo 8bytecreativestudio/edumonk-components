@@ -1,9 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import HomePage from './modules/practice/pages/HomePage';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HomePage from "./modules/practice/pages/HomePage";
+import Two from "./modules/practice/pages/SecondPage/Two";
 
 export default () => (
   <Router>
-    <Route exact path="/" component={HomePage} />
+    <div>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/two" component={Two} />
+    </div>
   </Router>
 );

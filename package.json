@@ -17,6 +17,7 @@
     "*.{js,json,css,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
+    "antd": "^3.4.4",
     "autoprefixer": "^8.4.1",
     "node-sass": "^4.9.0",
     "postcss-modules": "^1.1.0",
