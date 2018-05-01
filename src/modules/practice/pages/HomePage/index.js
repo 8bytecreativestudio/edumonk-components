@@ -1,23 +1,17 @@
 import React from 'react';
-import InputBox from './../../../common/atoms/InputBox';
-import styles from './index.scss';
 
 class HomePage extends React.Component {
-  state = {
-    value: ''
-  };
-
-  onChange = value => {
-    this.setState({
-      value
-    });
-  };
-
   render() {
-    const { value } = this.state;
     return (
-      <div className={styles.container}>
-        <InputBox value={value} onChange={this.onChange} />{' '}
+      <div>
+        <h3>Pages</h3>
+        <hr />
+        <div>
+          <a href="">Page 1</a>
+        </div>
+        <div>
+          <a href="">Page 1</a>
+        </div>
       </div>
     );
   }
