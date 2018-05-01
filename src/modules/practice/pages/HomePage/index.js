@@ -7,10 +7,7 @@ class HomePage extends React.Component {
         <h3>Pages</h3>
         <hr />
         <div>
-          <a href="">Page 1</a>
-        </div>
-        <div>
-          <a href="">Page 1</a>
+          <a href="/chats">Chats</a>
         </div>
       </div>
     );
