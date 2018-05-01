@@ -13,6 +13,8 @@
     "fix": "yarn fix:code && yarn fix:assets",
     "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
     "eslint": "eslint --fix",
+    "test:code":
+      "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
     "lint": "npm run eslint --fix --ext js --ext jsx --ext json .",
     "test": "jest",
     "precommit": "lint-staged",
@@ -20,10 +22,12 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"]
+    "*.{js,jsx}": ["eslint --fix", "git add"],
+    "*.{json,md,scss}": ["prettier --write", "git add"]
   },
   "dependencies": {
     "autoprefixer": "^8.4.1",
+    "classnames": "^2.2.5",
     "node-sass": "^4.9.0",
     "postcss-modules": "^1.1.0",
     "react": "^16.3.2",

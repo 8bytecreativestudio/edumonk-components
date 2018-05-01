@@ -17,8 +17,7 @@ class HomePage extends React.Component {
     const { value } = this.state;
     return (
       <div className={styles.container}>
-        Test
-        <InputBox value={value} onChange={this.onChange} />
+        <InputBox value={value} onChange={this.onChange} />{' '}
       </div>
     );
   }
