@@ -1,0 +1,25 @@
+@import '../../../theme/component.scss';
+
+.card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.4em;
+
+  .body {
+    display: flex;
+    flex-direction: row;
+
+    .cardHeading {
+      font-size: 2rem;
+    }
+
+    .midContent {
+      margin-left: 1rem;
+    }
+
+    .rightContent {
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse;
+    }
+  }
+}

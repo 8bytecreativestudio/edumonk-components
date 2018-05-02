@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import HomePage from './modules/practice/pages/HomePage';
 import ChatsPage from './modules/practice/pages/ChatsPage';
+import './App.scss';
 
 export default () => (
   <Router>
