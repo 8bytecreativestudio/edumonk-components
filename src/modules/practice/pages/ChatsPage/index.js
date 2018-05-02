@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../../../common/organisms/Layout';
+import styles from './index.scss';
 
 class ChatsPage extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class ChatsPage extends React.Component {
 
     return (
       <Layout breadcrumbs={breadcrumbs}>
-        <div>Chats Page</div>
+        <div className={styles.container}>Chats Page</div>
       </Layout>
     );
   }

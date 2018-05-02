@@ -1,0 +1,11 @@
+.container {
+  background-color: red;
+  display: flex;
+  flex: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    background-color: green;
+  }
+}
