@@ -8,6 +8,8 @@ class HomePage extends React.Component {
         <hr />
         <div>
           <a href="/chats">Chats</a>
+          <br />
+          <a href="/second">second</a>
         </div>
       </div>
     );

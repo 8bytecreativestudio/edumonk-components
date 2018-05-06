@@ -9,3 +9,21 @@
     background-color: green;
   }
 }
+.chatBody {
+  background-color: lightgreen;
+}
+.one {
+  position: relative;
+}
+.userCard {
+  background-color: rgb(185, 185, 185);
+}
+.chatInput {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 35px 35px 19px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

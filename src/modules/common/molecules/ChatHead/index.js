@@ -8,14 +8,16 @@ import CardHeading from '../../atoms/CardHeading';
 import P from '../../atoms/P';
 
 const ChatHead = props => {
-  const { name, message, className, onOptionsButtonClick, showOptionsButton } = props;
+  const { name, message, className, onOptionsButtonClick, showOptionsButton, showAvatar } = props;
 
   return (
     <Card className={classnames(styles.card, className)}>
       <div className={styles.body}>
-        <div>
-          <Avatar icon="user" />
-        </div>
+        {showAvatar && (
+          <div>
+            <Avatar icon="user" />
+          </div>
+        )}
         <div className={styles.midContent}>
           <CardHeading>{name}</CardHeading>
           <P>{message}</P>
@@ -31,12 +33,14 @@ const ChatHead = props => {
 };
 
 ChatHead.propTypes = {
-  name: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired
+  name: PropTypes.string,
+  message: PropTypes.string.isRequired,
+  showAvatar: PropTypes.bool
 };
 
 ChatHead.defaultProps = {
-  showOptionsButton: true
+  showOptionsButton: true,
+  showAvatar: true
 };
 
 export default ChatHead;

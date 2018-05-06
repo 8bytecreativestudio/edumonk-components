@@ -6,24 +6,24 @@
 
   .body {
     display: flex;
-    // flex-direction: row;
-
-    .cardHeading {
-      font-size: 2rem;
-    }
-
     .midContent {
       margin-left: 1rem;
     }
-
-    .rightContent {
+    .toInline {
       display: flex;
-      flex: 1;
+      .name {
+        margin-right: 0.4rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+    }
+    .time {
+      color: #9b9b9b;
+      font-size: 0.6rem;
+      display: flex;
+      flex: auto;
       flex-direction: row-reverse;
+      align-self: flex-end;
     }
   }
-}
-
-.card .self {
-  background-color: gray;
 }

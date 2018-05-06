@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: red;
+  display: flex;
+  flex: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    background-color: green;
+  }
+}
+// .one {
+//   position: relative;
+// }
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  border-bottom: 1px solid grey;
+  .header_name {
+    color: grey;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+.conversation {
+  padding: 1em;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+.mainBody {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  .conversationPanel {
+    padding-top: 6px;
+  }
+  .chatBody {
+    background-color: lightgreen;
+    position: relative;
+    width: 100%;
+  }
+}
+.userCard {
+  background-color: rgb(185, 185, 185);
+}
+.historyCard {
+  font-size: 0.8rem;
+}
+.bufferZone {
+  height: 6rem;
+}
+.chatInput {
+  // padding: 0.75rem 18rem 0.75rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(100, 92, 92);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .conversationPanel {
+    display: none;
+  }
+  .mainBody {
+    grid-template-columns: 1fr;
+  }
+}
