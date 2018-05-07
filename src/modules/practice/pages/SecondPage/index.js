@@ -1,12 +1,14 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Icon, Avatar, Button } from 'antd';
+import { Icon, Avatar, Button, Input } from 'antd';
 // import classnames from 'classnames';
 import Layout from '../../../common/organisms/Layout';
 import ChatHead from '../../../common/molecules/ChatHead';
 import History from '../../../common/molecules/History';
 import InputBox from '../../../common/atoms/InputBox';
 import styles from './index.scss';
+
+const Search = Input.Search;
 
 class SecondPage extends React.Component {
   state = {
@@ -34,7 +36,7 @@ class SecondPage extends React.Component {
         <div className={styles.one}>
           <div className={styles.header}>
             <div>
-              <Icon type="menu-fold" style={{ fontSize: 30, color: 'green' }} />
+              <Icon type="menu-fold" style={{ fontSize: 30, color: 'grey' }} />
             </div>
             <div>
               <Avatar icon="user" />
@@ -42,9 +44,11 @@ class SecondPage extends React.Component {
             </div>
           </div>
           <div className={styles.conversation}>
-            <div>
-              <Icon type="profile" style={{ fontSize: 30, color: 'orange' }} />
-              <span style={{ fontSize: 18, color: 'rgb(139, 138, 138)' }}> Conversation</span>
+            <div className={styles.alignItems}>
+              <div>
+                <Icon type="profile" style={{ fontSize: 28, color: 'red' }} />
+              </div>
+              <div tyle={{ fontSize: '17px', color: 'rgb(139, 138, 138)' }}> Conversation</div>
             </div>
             <div>
               <Button type="primary">Start conversation</Button>
@@ -52,12 +56,17 @@ class SecondPage extends React.Component {
           </div>
           <div className={styles.mainBody}>
             <div className={styles.conversationPanel}>
-              <InputBox value={this.state.search} onChange={this.searchText} />
+              {/* <InputBox value={this.state.search} onChange={this.searchText} /> */}
+              <Search
+                placeholder="search conversation"
+                onChange={e => this.searchText(e.target.value)}
+                style={{ padding: '0.3rem', width: '100%' }}
+              />
               <History className={styles.historyCard} name="Hari Aryal" message="a quick brown fox jumped" />
               <History className={styles.historyCard} name="Ram Poudel" message="a quick brown" />
               <History
                 className={styles.historyCard}
-                name="Dharmaraj Pandey"
+                name="Dharmaraj Prasad Pandey"
                 message="a quick brown fox jumped over the lazy dog"
               />
             </div>

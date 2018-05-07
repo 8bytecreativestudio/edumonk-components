@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import HomePage from './modules/practice/pages/HomePage';
 import ChatsPage from './modules/practice/pages/ChatsPage';
 import SecondPage from './modules/practice/pages/SecondPage';
+import ThirdPage from './modules/practice/pages/ThirdPage';
 import './App.scss';
 
 export default () => (
@@ -13,6 +14,7 @@ export default () => (
       <Route exact path="/" component={HomePage} />
       <Route exact path="/chats" component={ChatsPage} />
       <Route exact path="/second" component={SecondPage} />
+      <Route exact path="/third" component={ThirdPage} />
     </div>
   </Router>
 );

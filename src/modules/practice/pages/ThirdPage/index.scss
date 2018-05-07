@@ -29,11 +29,7 @@ $lightBlueBg: rgb(223, 247, 255);
   padding: 0.5rem;
   border-bottom: 1px solid $borderColor;
   display: flex;
-  justify-content: space-between;
-  .alignItems {
-    display: flex;
-    align-items: center;
-  }
+  align-items: center;
 }
 .mainBody {
   display: grid;
@@ -41,6 +37,10 @@ $lightBlueBg: rgb(223, 247, 255);
   .conversationPanel {
     padding-top: 6px;
     background-color: $lightBlueBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     .inputPadding {
       padding-left: 10px;
     }

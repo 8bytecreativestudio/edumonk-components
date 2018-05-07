@@ -1,9 +1,10 @@
 import React from 'react';
-import { Card, Avatar, Tag, Icon } from 'antd';
+import { Card, Avatar, Icon } from 'antd';
 // import classnames from 'classnames';
 
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
+import Tag from '../../atoms/Tag';
 import P from '../../atoms/P';
 
 const History = props => {
@@ -22,7 +23,8 @@ const History = props => {
               <CardHeading className={styles.name}>{name}</CardHeading>
             </div>
             <div>
-              <Tag color="#f50">PARENT</Tag>
+              <Tag text={'PARENT'} />
+              {/* <Tag style={{padding:"2px",borderRadius:"25px"}} color="#ff5b6f">PARENT</Tag> */}
             </div>
           </div>
           <P>{message}</P>
