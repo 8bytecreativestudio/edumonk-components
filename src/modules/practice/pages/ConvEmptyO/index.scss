@@ -1,0 +1,59 @@
+$borderColor: rgb(224, 224, 224);
+$lightBlueBg: rgb(223, 247, 255);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.one {
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.conversation {
+  padding: 0.5rem;
+  border-bottom: 1px solid $borderColor;
+  display: flex;
+  align-items: center;
+}
+.mainBody {
+  height: 100vh;
+  position: relative;
+  .conversationPanel {
+    height: 100vh;
+    width: 100%;
+    background-color: $lightBlueBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .text {
+      color: #595959;
+      padding: 16.8px;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 20px;
+    }
+    .button {
+      padding: 0.4rem;
+      font-size: 12px;
+    }
+  }
+  .icon {
+    position: fixed;
+    bottom: 36px;
+    right: 23px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .chatBodyParent {
+    display: none !important;
+  }
+  .conversationPanel {
+    flex: 1;
+  }
+}

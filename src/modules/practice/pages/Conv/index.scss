@@ -8,38 +8,15 @@ $lightBlueBg: rgb(223, 247, 255);
 .one {
   background-color: white;
 }
-.container {
+
+.chatBody {
+  position: relative;
+  width: 100%;
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  padding-top: 55px;
 }
 
-.conversation {
-  padding: 0.5rem;
-  border-bottom: 1px solid $borderColor;
-  display: flex;
-  justify-content: space-between;
-  .alignItems {
-    display: flex;
-    align-items: center;
-  }
-}
-.mainBody {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  .conversationPanel {
-    padding-top: 17px;
-    background-color: $lightBlueBg;
-    .inputPadding {
-      padding-left: 10px;
-    }
-  }
-  .chatBody {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-}
 .userCard {
   background-color: #f3f3f3;
   align-self: flex-end;
@@ -47,10 +24,9 @@ $lightBlueBg: rgb(223, 247, 255);
 .cardWidth {
   width: 400px;
 }
-.historyCard {
-  font-size: 0.8rem;
-}
+
 .bufferZone {
+  // "bufferZone" space between content and chat input
   height: 6rem;
 }
 .chatInput {
@@ -74,12 +50,6 @@ $lightBlueBg: rgb(223, 247, 255);
 }
 
 @media only screen and (max-width: 938px) {
-  .conversationPanel {
-    display: none;
-  }
-  .mainBody {
-    grid-template-columns: 1fr;
-  }
   .cardWidth {
     width: auto;
   }

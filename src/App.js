@@ -3,18 +3,32 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
 import HomePage from './modules/practice/pages/HomePage';
-import ChatsPage from './modules/practice/pages/ChatsPage';
+import Conv from './modules/practice/pages/Conv';
 import SecondPage from './modules/practice/pages/SecondPage';
-import ThirdPage from './modules/practice/pages/ThirdPage';
+import ConvEmptyII from './modules/practice/pages/ConvEmptyII';
+import CreateConv from './modules/practice/pages/CreateConv';
+import ConvEmptyO from './modules/practice/pages/ConvEmptyO';
+import ConvEmptyI from './modules/practice/pages/ConvEmptyI';
+import ConvWebEmpty from './modules/practice/pages/ConvWebEmpty';
+// import ActivitiesEmpty from './modules/practice/pages/ActivitiesEmpty';
+// import ActivitiesHome from './modules/practice/pages/ActivitiesHome';
+// import ActivitiesRecord from './modules/practice/pages/ActivitiesRecord';
 import './App.scss';
 
 export default () => (
   <Router>
     <div>
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/chats" component={ChatsPage} />
+      <Route exact path="/Conv" component={Conv} />
       <Route exact path="/second" component={SecondPage} />
-      <Route exact path="/third" component={ThirdPage} />
+      <Route exact path="/ConvEmptyII" component={ConvEmptyII} />
+      <Route exact path="/ConvEmptyO" component={ConvEmptyO} />
+      <Route exact path="/ConvEmptyI" component={ConvEmptyI} />
+      <Route exact path="/CreateConv" component={CreateConv} />
+      <Route exact path="/ConvWebEmpty" component={ConvWebEmpty} />
+      {/* <Route exact path="/ActivitiesEmpty" component={ActivitiesEmpty} />
+      <Route exact path="/ActivitiesHome" component={ActivitiesHome} />
+      <Route exact path="/ActivitiesRecord" component={ActivitiesRecord} /> */}
     </div>
   </Router>
 );

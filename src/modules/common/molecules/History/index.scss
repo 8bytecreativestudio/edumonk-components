@@ -3,7 +3,6 @@
 .card {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0.4em;
-
   .body {
     display: flex;
     .midContent {
@@ -13,17 +12,23 @@
       display: flex;
       .name {
         margin-right: 0.4rem;
-        font-size: 0.9rem;
+        font-size: 12px;
         font-weight: bold;
       }
     }
-    .time {
-      color: #9b9b9b;
-      font-size: 0.6rem;
-      display: flex;
-      flex: auto;
-      flex-direction: row-reverse;
-      align-self: flex-end;
-    }
+  }
+  .time {
+    color: #9b9b9b;
+    font-size: 0.6rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .radioButton {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 }
