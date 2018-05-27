@@ -16,7 +16,7 @@ $lightBlueBg: rgb(223, 247, 255);
 
 .conversation {
   padding: 0.5rem;
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 0.0625rem solid $borderColor;
   display: flex;
   align-items: center;
 }
@@ -32,20 +32,20 @@ $lightBlueBg: rgb(223, 247, 255);
     flex-direction: column;
     .text {
       color: #595959;
-      padding: 16.8px;
+      padding: 1.05rem;
       text-align: center;
       line-height: 1.6;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     .button {
       padding: 0.4rem;
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
   .icon {
     position: fixed;
-    bottom: 36px;
-    right: 23px;
+    bottom: 2.25rem;
+    right: 1.4375rem;
   }
 }
 .bufferZone {

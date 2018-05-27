@@ -15,7 +15,7 @@ $lightBlueBg: rgb(223, 247, 255);
 
 .conversation {
   padding: 0.5rem;
-  border-bottom: 1px solid $borderColor;
+  border-bottom: 0.0625rem solid $borderColor;
   display: flex;
   justify-content: space-between;
   .alignItems {
@@ -27,10 +27,10 @@ $lightBlueBg: rgb(223, 247, 255);
   display: grid;
   grid-template-columns: 1fr 2fr;
   .conversationPanel {
-    padding-top: 17px;
+    padding-top: 1.0625rem;
     background-color: $lightBlueBg;
     .inputPadding {
-      padding-left: 10px;
+      padding-left: 0.625rem;
     }
   }
   .chatBody {
@@ -45,7 +45,7 @@ $lightBlueBg: rgb(223, 247, 255);
   align-self: flex-end;
 }
 .cardWidth {
-  width: 400px;
+  width: 25rem;
 }
 .historyCard {
   font-size: 0.8rem;
@@ -73,7 +73,7 @@ $lightBlueBg: rgb(223, 247, 255);
   }
 }
 
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: (0.0625*938)rem) {
   .conversationPanel {
     display: none;
   }
