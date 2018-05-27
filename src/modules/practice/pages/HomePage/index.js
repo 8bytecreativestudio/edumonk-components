@@ -20,11 +20,12 @@ class HomePage extends React.Component {
           <a href="/ConvEmptyI">ConvEmptyI</a>
           <br />
           <a href="/ConvWebEmpty">ConvWebEmpty</a>
-          {/* <a href="/ActivitiesEmpty">ActivitiesEmpty</a>
+          <br />
+          <a href="/ActivitiesEmpty">ActivitiesEmpty</a>
           <br />
           <a href="/ActivitiesHome">ActivitiesHome</a>
           <br />
-          <a href="/ActivitiesRecord">ActivitiesRecord</a> */}
+          <a href="/ActivitiesRecord">ActivitiesRecord</a>
         </div>
       </div>
     );
