@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Button, Input } from 'antd';
 import Layout from '../../../common/organisms/Layout';
 import ChatHead from '../../../common/molecules/ChatHead';

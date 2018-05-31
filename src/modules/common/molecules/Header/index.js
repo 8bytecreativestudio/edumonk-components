@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Icon, Avatar } from 'antd';
 import styles from './index.scss';
 

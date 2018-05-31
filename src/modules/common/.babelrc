@@ -1,0 +1,8 @@
+{
+    "presets": ["env", "react", "es2017"],
+    "plugins": ["transform-class-properties", "transform-export-extensions", ["css-modules-transform", {
+      "extensions": [".css", ".scss"],
+      "preprocessCss": "./config/processscss.js",
+      "extractCss": "./lib/stylesheets/combined.css"
+    }]]
+  }
