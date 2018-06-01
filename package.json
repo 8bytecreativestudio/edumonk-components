@@ -20,7 +20,9 @@
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "transpile": "babel './src/modules/common' -d lib --copy-files"
+    "transpile":
+      "BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "lint-staged": {
     "*.{js,jsx}": ["eslint --fix", "git add"],
