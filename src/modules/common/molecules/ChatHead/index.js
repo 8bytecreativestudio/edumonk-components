@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, Avatar, Icon } from 'antd';
+import { Avatar, Icon } from 'antd';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+// import classnames from 'classnames';
+import CardUni from '../../../common/atoms/CardUni';
 
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
@@ -19,9 +20,8 @@ const ChatHead = props => {
     noButton,
     showAvatar
   } = props;
-
   return (
-    <Card className={classnames(styles.card, userCard, cardWidth)}>
+    <CardUni card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
         {showAvatar && (
           <div>
@@ -48,7 +48,7 @@ const ChatHead = props => {
           </div>
         )}
       </div>
-    </Card>
+    </CardUni>
   );
 };
 
