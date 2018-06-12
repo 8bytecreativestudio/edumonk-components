@@ -19,7 +19,10 @@
     "test": "jest",
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "transpile":
+      "BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "lint-staged": {
     "*.{js,jsx}": ["eslint --fix", "git add"],
@@ -31,6 +34,7 @@
     "classnames": "^2.2.5",
     "node-sass": "^4.9.0",
     "postcss-modules": "^1.1.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
@@ -43,9 +47,12 @@
     "@storybook/addon-links": "^4.0.0-alpha.4",
     "@storybook/addons": "^4.0.0-alpha.4",
     "@storybook/react": "^4.0.0-alpha.4",
+    "babel-cli": "^6.26.0",
     "babel-core": "6",
     "babel-eslint": "^8.2.3",
+    "babel-plugin-css-modules-transform": "^1.6.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2017": "^6.24.1",

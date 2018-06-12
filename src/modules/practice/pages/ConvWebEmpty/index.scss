@@ -1,0 +1,50 @@
+$borderColor: rgb(224, 224, 224);
+$lightBlueBg: rgb(223, 247, 255);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.one {
+  background-color: white;
+}
+
+.mainBody {
+  display: flex;
+  height: 100vh;
+  .leftPanel {
+    display: flex;
+    flex: 1;
+    background-color: rgb(190, 190, 255);
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    .text {
+      padding: 1rem;
+    }
+  }
+  .rightPanel {
+    display: flex;
+    flex: 2;
+  }
+}
+
+.chatInput {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: rgb(100, 92, 92);
+  background-color: rgb(255, 255, 255);
+  padding: 0.625rem 0.312rem;
+  display: flex;
+  align-items: center;
+
+  .inputBox {
+    flex: 1;
+    margin-right: 0.8rem;
+  }
+
+  .button {
+    flex: 1;
+  }
+}

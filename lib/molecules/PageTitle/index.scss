@@ -1,0 +1,14 @@
+$borderColor: rgb(224, 224, 224);
+
+.conversation {
+  padding: 0.8rem;
+  border-bottom: 0.0625rem solid $borderColor;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+  .alignItems {
+    display: flex;
+    align-items: center;
+  }
+}

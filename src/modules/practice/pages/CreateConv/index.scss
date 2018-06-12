@@ -1,0 +1,43 @@
+$borderColor: rgb(224, 224, 224);
+$lightBlueBg: rgb(223, 247, 255);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.one {
+  background-color: white;
+  position: relative;
+}
+
+.chatBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  height: 100vh;
+}
+
+.bufferZone {
+  // "bufferZone" space between content and button
+  height: 6rem;
+}
+
+.button {
+  position: fixed;
+  bottom: 1.5625rem;
+  right: 1rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: (0.0625*938)rem) {
+  .bufferZone {
+    height: 1rem;
+  }
+  .button {
+    bottom: 0;
+    right: 0;
+  }
+}
