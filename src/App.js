@@ -13,6 +13,8 @@ import ConvWebEmpty from './modules/practice/pages/ConvWebEmpty';
 import ActivitiesEmpty from './modules/practice/pages/ActivitiesEmpty';
 import ActivitiesHome from './modules/practice/pages/ActivitiesHome';
 import ActivitiesRecord from './modules/practice/pages/ActivitiesRecord';
+import ProfileActivities from './modules/practice/pages/ProfileActivities';
+import ProfileDevices from './modules/practice/pages/ProfileDevices';
 import './App.scss';
 
 export default () => (
@@ -29,6 +31,8 @@ export default () => (
       <Route exact path="/ActivitiesEmpty" component={ActivitiesEmpty} />
       <Route exact path="/ActivitiesHome" component={ActivitiesHome} />
       <Route exact path="/ActivitiesRecord" component={ActivitiesRecord} />
+      <Route exact path="/ProfileActivities" component={ProfileActivities} />
+      <Route exact path="/ProfileDevices" component={ProfileDevices} />
     </div>
   </Router>
 );

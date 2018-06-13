@@ -7,14 +7,14 @@ import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
 import InputBox from '../../../common/atoms/InputBox';
 import CardHeading from '../../../common/atoms/CardHeading';
-// import Button from '../../../common/atoms/Button';
 import ChatHead from '../../../common/molecules/ChatHead';
 import P from '../../../common/atoms/P';
 
 class ActivitiesRecord extends React.Component {
   state = {
     text: '',
-    search: ''
+    search: '',
+    obj: ['apple']
   };
   updateText = text => {
     this.setState({ text });
@@ -51,13 +51,10 @@ class ActivitiesRecord extends React.Component {
               </div>
             </div>
             <div className={styles.studentCard}>
-              <ChatHead
-                cardWidth={styles.cardWidth}
-                message="Did sirish took his nap?"
-                showOptionsButton={false}
-                yesButton={true}
-                noButton={true}
-              />
+              <ChatHead cardWidth={styles.cardWidth} message="Did sirish took his nap?" YesNoButton={true} />
+              <div>
+                <button>{this.state.obj}</button>
+              </div>
             </div>
             <div className={styles.chatInput}>
               <div className={styles.inputBox}>

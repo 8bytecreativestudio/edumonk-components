@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Button, Input } from 'antd';
+import { Button, Input, Icon } from 'antd';
 import Layout from '../../../common/organisms/Layout';
 import ChatHead from '../../../common/molecules/ChatHead';
 import History from '../../../common/molecules/History';
@@ -22,6 +22,9 @@ class SecondPage extends React.Component {
   };
   searchText = search => {
     this.setState({ search });
+  };
+  onclickEllipsis = () => {
+    return;
   };
   render() {
     const breadcrumbs = [
@@ -84,7 +87,9 @@ class SecondPage extends React.Component {
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
-                />
+                >
+                  <Icon type="ellipsis" onClick={this.onclickEllipsis} />
+                </ChatHead>
                 <ChatHead
                   cardWidth={styles.cardWidth}
                   message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
@@ -103,12 +108,37 @@ class SecondPage extends React.Component {
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                >
+                  <Icon type="ellipsis" onClick={this.onclickEllipsis} />
+                </ChatHead>
+                <ChatHead
+                  cardWidth={styles.cardWidth}
+                  name="Bipin Bhandari"
+                  message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                >
+                  <Icon type="ellipsis" onClick={this.onclickEllipsis} />
+                </ChatHead>
+                <ChatHead
+                  cardWidth={styles.cardWidth}
+                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
+                  showOptionsButton={false}
+                  showAvatar={false}
+                  userCard={styles.userCard}
+                />
+                <ChatHead
+                  cardWidth={styles.cardWidth}
+                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
+                  showOptionsButton={false}
+                  showAvatar={false}
+                  userCard={styles.userCard}
                 />
                 <ChatHead
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
-                />
+                >
+                  <Icon type="ellipsis" onClick={this.onclickEllipsis} />
+                </ChatHead>
                 <ChatHead
                   cardWidth={styles.cardWidth}
                   message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
@@ -116,26 +146,9 @@ class SecondPage extends React.Component {
                   showAvatar={false}
                   userCard={styles.userCard}
                 />
-                <ChatHead
-                  cardWidth={styles.cardWidth}
-                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
-                  showOptionsButton={false}
-                  showAvatar={false}
-                  userCard={styles.userCard}
-                />
-                <ChatHead
-                  cardWidth={styles.cardWidth}
-                  name="Bipin Bhandari"
-                  message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
-                />
-                <ChatHead
-                  cardWidth={styles.cardWidth}
-                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
-                  showOptionsButton={false}
-                  showAvatar={false}
-                  userCard={styles.userCard}
-                />
-                <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message=" Base Camp on ay 18." />
+                <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message=" Base Camp on ay 18.">
+                  <Icon type="ellipsis" onClick={this.onclickEllipsis} />
+                </ChatHead>
                 <div className={styles.bufferZone} />
               </div>
 

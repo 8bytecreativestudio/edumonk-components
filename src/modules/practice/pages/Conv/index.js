@@ -1,7 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Button } from 'antd';
-// import classnames from 'classnames';
 import Layout from '../../../common/organisms/Layout';
 import ChatHead from '../../../common/molecules/ChatHead';
 import InputBox from '../../../common/atoms/InputBox';

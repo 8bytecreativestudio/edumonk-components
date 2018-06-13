@@ -8,7 +8,7 @@ import Tag from '../../atoms/Tag';
 import P from '../../atoms/P';
 
 const History = props => {
-  const { name, time, message, className, midContentClassName, completeTag, showTime, radioButton, status } = props;
+  const { name, time, message, className, midContentClassName, styleTag2, showTime, radioButton, status } = props;
 
   return (
     <Card className={classnames(styles.card, className, showTime, radioButton)}>
@@ -22,11 +22,11 @@ const History = props => {
             <div className={styles.name}>
               <CardHeading className={styles.name}>{name}</CardHeading>
             </div>
-            <div>
-              <Tag text={status} completeTag={completeTag} />
+            <div style={{ position: 'relative', top: '-0.125rem' }}>
+              <Tag text={status} styleTag2={styleTag2} />
             </div>
           </div>
-          <P>{message}</P>
+          <P className={styles.greyP}>{message}</P>
         </div>
         {radioButton && (
           <div className={styles.radioButton}>

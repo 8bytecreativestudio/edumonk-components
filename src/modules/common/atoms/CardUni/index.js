@@ -6,7 +6,9 @@ import { Card } from 'antd';
 const CardUni = ({ children, card, userCard, cardWidth }) => {
   return (
     <Card className={classnames(card, userCard, cardWidth)}>
+      {/* <div>{header}</div> */}
       <div>{children}</div>
+      {/* <div>{footer}</div> */}
     </Card>
   );
 };

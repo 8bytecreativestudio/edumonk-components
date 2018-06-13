@@ -26,6 +26,10 @@ class HomePage extends React.Component {
           <a href="/ActivitiesHome">ActivitiesHome</a>
           <br />
           <a href="/ActivitiesRecord">ActivitiesRecord</a>
+          <br />
+          <a href="/ProfileActivities">ProfileActivities</a>
+          <br />
+          <a href="/ProfileDevices">ProfileDevices</a>
         </div>
       </div>
     );
