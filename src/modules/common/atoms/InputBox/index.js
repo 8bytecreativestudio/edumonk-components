@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './index.scss';
+import { Input } from 'antd';
 
-export default ({ onChange, value }) => (
-  <input className={styles.input} onChange={event => onChange(event.target.value)} value={value} />
-);
+// import styles from './index.scss';
+
+const Inputbox = ({ onChange, value }) => <Input onChange={event => onChange(event.target.value)} value={value} />;
+
+export default Inputbox;
