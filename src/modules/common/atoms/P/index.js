@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames';
-import 'antd/dist/antd.css';
 import { Icon } from 'antd';
 import styles from './index.scss';
 

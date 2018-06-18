@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Icon, Button } from 'antd';
 import Layout from '../../../common/organisms/Layout';
 import Header from '../../../common/molecules/Header';

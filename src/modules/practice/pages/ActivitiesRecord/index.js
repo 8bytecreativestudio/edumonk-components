@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Button, Avatar, Progress } from 'antd';
 import styles from './index.scss';
 import Layout from '../../../common/organisms/Layout';

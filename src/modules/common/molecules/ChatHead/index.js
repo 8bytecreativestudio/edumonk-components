@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Avatar, Button } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
