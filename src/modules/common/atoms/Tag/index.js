@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import styles from './index.scss';
+import { Tag as AntTag } from 'antd';
 
-const Tag = ({ text, styleTag }) => <span className={classnames(styles.tagStyle, styleTag)}>{text}</span>;
+const Tag = ({ text, styleTag, color }) => (
+  <span className={styleTag}>
+    <AntTag color={color}>{text}</AntTag>
+  </span>
+);
 
 Tag.propTypes = {
   text: PropTypes.string

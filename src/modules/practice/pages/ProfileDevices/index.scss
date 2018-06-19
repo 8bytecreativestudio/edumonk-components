@@ -1,5 +1,3 @@
-$borderColor: rgb(224, 224, 224);
-$lightBlueBg: rgb(223, 247, 255);
 * {
   margin: 0;
   padding: 0;
@@ -23,34 +21,16 @@ $lightBlueBg: rgb(223, 247, 255);
   color: black;
   margin: 14px;
 }
-.customCardHeading {
-  flex: 1;
-  color: green;
-}
+
 .styleTag {
-  background-color: #4a90e2;
   margin-left: 0.75rem;
 }
-.styleTagBlue {
-  background-color: #4a90e2;
-  display: inline-table;
-  padding: 0.07rem 0.55rem;
-  font-size: 0.625rem;
-}
-.styleTag2 {
-  margin-left: 0.75rem;
-}
-.cardHeadingtagBlue {
-  margin-left: 0.75rem;
-  background-color: #4a90e2;
-}
-.cardHeadingtagPink {
-  margin-left: 0.75rem;
-  background-color: #e24a5e;
-}
-.cardHeadingtagGreen {
-  margin-left: 0.75rem;
-  background-color: #2ecc71;
+.linkAdditional {
+  padding: 0;
+  margin: 0;
+  &:hover {
+    cursor: cell;
+  }
 }
 
 .timeFont {

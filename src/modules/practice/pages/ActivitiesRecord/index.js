@@ -6,7 +6,7 @@ import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
 import InputBox from '../../../common/atoms/InputBox';
 import CardHeading from '../../../common/atoms/CardHeading';
-import ChatHead from '../../../common/molecules/ChatHead';
+import ChatBox from '../../../common/molecules/ChatBox';
 import P from '../../../common/atoms/P';
 
 class ActivitiesRecord extends React.Component {
@@ -50,7 +50,7 @@ class ActivitiesRecord extends React.Component {
               </div>
             </div>
             <div className={styles.studentCard}>
-              <ChatHead cardWidth={styles.cardWidth} message="Did sirish took his nap?" YesNoButton={true} />
+              <ChatBox cardWidth={styles.cardWidth} message="Did sirish took his nap?" YesNoButton={true} />
               <div>
                 <button>{this.state.obj}</button>
               </div>

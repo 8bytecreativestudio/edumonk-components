@@ -4,7 +4,7 @@ import styles from './index.scss';
 import Layout from '../../../common/organisms/Layout';
 import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
-import ChatHead from '../../../common/molecules/ChatHead';
+import ActivityCard from '../../../common/molecules/ActivityCard';
 import CardHeading from '../../../common/atoms/CardHeading';
 
 import TabGroup from '../../../common/molecules/TabGroup';
@@ -47,7 +47,7 @@ class ProfileActivities extends React.Component {
           <Header />
           <PageTitle text="Dashboard" showIcon="true" />
           <div className={styles.mainBody}>
-            <ChatHead
+            <ActivityCard
               cardWidth={styles.cardWidth}
               name="Bipin Bhandari"
               tag="PARENT"
@@ -67,7 +67,7 @@ class ProfileActivities extends React.Component {
                   key="1"
                 >
                   <TabGroup>
-                    <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message={this.state.time} />
+                    <ActivityCard cardWidth={styles.cardWidth} name="Bipin Bhandari" message={this.state.time} />
                   </TabGroup>
                 </TabPane>
                 <TabPane
@@ -79,7 +79,7 @@ class ProfileActivities extends React.Component {
                   key="2"
                 >
                   <TabGroup>
-                    <ChatHead
+                    <ActivityCard
                       cardWidth={styles.cardWidth}
                       name="Hari Sharma"
                       message={this.state.time}
@@ -96,7 +96,7 @@ class ProfileActivities extends React.Component {
                   key="3"
                 >
                   <TabGroup>
-                    <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message={this.state.time} />
+                    <ActivityCard cardWidth={styles.cardWidth} name="Bipin Bhandari" message={this.state.time} />
                   </TabGroup>
                 </TabPane>
                 <TabPane
@@ -109,22 +109,22 @@ class ProfileActivities extends React.Component {
                 >
                   <TabGroup>
                     <CardHeading className={styles.cardHeading}>Activities</CardHeading>
-                    <ChatHead
+                    <ActivityCard
                       cardWidth={styles.cardWidth}
                       name="Bipin Bhandari"
                       displayClock={true}
                       message={this.state.time}
                     >
                       <Tag text="LOGIN" styleTag={styles.styleTag} />
-                    </ChatHead>
-                    <ChatHead
+                    </ActivityCard>
+                    <ActivityCard
                       cardWidth={styles.cardWidth}
                       name="Ram Sharma"
                       displayClock={true}
                       message={this.state.time}
                     >
                       <Tag text="MOMENT" styleTag={styles.styleTag} />
-                    </ChatHead>
+                    </ActivityCard>
                   </TabGroup>
                 </TabPane>
               </Tabs>

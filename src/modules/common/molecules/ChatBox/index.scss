@@ -1,0 +1,31 @@
+@import '../../../theme/component.scss';
+
+.card {
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  margin: 0.4rem;
+
+  .body {
+    display: flex;
+
+    .cardHeading {
+      font-size: 0.875rem;
+    }
+
+    .midContent {
+      margin-left: 1rem;
+    }
+
+    .rightContent {
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.card .self {
+  background-color: #f3f3f3;
+}
+.greyP {
+  color: #9b9b9b;
+}

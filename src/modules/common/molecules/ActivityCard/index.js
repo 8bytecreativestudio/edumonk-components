@@ -3,14 +3,13 @@ import { Avatar, Button } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CardUni from '../../../common/atoms/CardUni';
-
+import ProfileInfo from '../../molecules/ProfileInfo';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
-import ProfileInfo from '../ProfileInfo';
 import P from '../../atoms/P';
 import Tag from '../../atoms/Tag';
 
-const ChatHead = ({
+const ActivityCard = ({
   children,
   name,
   message,
@@ -20,26 +19,24 @@ const ChatHead = ({
   displayTag,
   status,
   styleTag,
+  color,
   displayClock,
   timeFont,
   YesNoButton,
   infoFooter,
-  showAvatar,
   info
 }) => {
   return (
     <CardUni card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
-        {showAvatar && (
-          <div>
-            <Avatar icon="user" />
-          </div>
-        )}
+        <div>
+          <Avatar icon="user" />
+        </div>
         <div className={styles.midContent}>
           <CardHeading className={customCardHeading}>{name}</CardHeading>
           {displayTag && (
             <span>
-              <Tag text={status} styleTag={styleTag} />
+              <Tag color={color} text={status} styleTag={styleTag} />
             </span>
           )}
           <P className={classnames(styles.greyP, timeFont)} displayClock={displayClock}>
@@ -67,18 +64,16 @@ const ChatHead = ({
   );
 };
 
-ChatHead.propTypes = {
+ActivityCard.propTypes = {
   name: PropTypes.string,
-  message: PropTypes.string.isRequired,
-  showAvatar: PropTypes.bool
+  message: PropTypes.string.isRequired
 };
 
-ChatHead.defaultProps = {
+ActivityCard.defaultProps = {
   showOptionsButton: true,
-  showAvatar: true,
   YesNoButton: false,
   infoFooter: false,
   displayTag: false
 };
 
-export default ChatHead;
+export default ActivityCard;

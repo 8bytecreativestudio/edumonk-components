@@ -23,7 +23,7 @@ const History = props => {
               <CardHeading className={styles.name}>{name}</CardHeading>
             </div>
             <div style={{ position: 'relative', top: '-0.125rem' }}>
-              <Tag text={status} styleTag2={styleTag2} />
+              <Tag color="#ff5b6f" text={status} styleTag2={styleTag2} />
             </div>
           </div>
           <P className={styles.greyP}>{message}</P>
