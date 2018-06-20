@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Input } from 'antd';
 import Layout from '../../../common/organisms/Layout';
-import ChatHead from '../../../common/molecules/ChatHead';
+import ChatBox from '../../../common/molecules/ChatBox';
 import History from '../../../common/molecules/History';
 import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
@@ -21,6 +21,9 @@ class SecondPage extends React.Component {
   };
   searchText = search => {
     this.setState({ search });
+  };
+  onclickEllipsis = () => {
+    return;
   };
   render() {
     const breadcrumbs = [
@@ -79,63 +82,86 @@ class SecondPage extends React.Component {
             </div>
             <div>
               <div className={styles.chatBody}>
-                <ChatHead
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                  showEllipsis={true}
+                  onClick={this.onclickEllipsis}
                 />
-                <ChatHead
+                {/*<Icon type="ellipsis" onClick={this.onclickEllipsis} />*/}
+                {/*</ChatBox>*/}
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
                   showOptionsButton={false}
                   showAvatar={false}
                   userCard={styles.userCard}
                 />
-                <ChatHead
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
                   showOptionsButton={false}
                   showAvatar={false}
                   userCard={styles.userCard}
                 />
-                <ChatHead
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                  showEllipsis={true}
+                  onClick={this.onclickEllipsis}
                 />
-                <ChatHead
+                {/*<Icon type="ellipsis" onClick={this.onclickEllipsis} />*/}
+                {/*</ChatBox>*/}
+                <ChatBox
+                  cardWidth={styles.cardWidth}
+                  name="Bipin Bhandari"
+                  message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 20123333333333333333333333**********."
+                  showEllipsis={true}
+                  onClick={this.onclickEllipsis}
+                />
+                {/*<Icon type="ellipsis" onClick={this.onclickEllipsis} />*/}
+                {/*</ChatBox>*/}
+                <ChatBox
+                  cardWidth={styles.cardWidth}
+                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
+                  showOptionsButton={false}
+                  showAvatar={false}
+                  userCard={styles.userCard}
+                />
+                <ChatBox
+                  cardWidth={styles.cardWidth}
+                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
+                  showOptionsButton={false}
+                  showAvatar={false}
+                  userCard={styles.userCard}
+                />
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                  showEllipsis={true}
+                  onClick={this.onclickEllipsis}
                 />
-                <ChatHead
+                {/*<Icon type="ellipsis" onClick={this.onclickEllipsis} />*/}
+                {/*</ChatBox>*/}
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
                   showOptionsButton={false}
                   showAvatar={false}
                   userCard={styles.userCard}
                 />
-                <ChatHead
-                  cardWidth={styles.cardWidth}
-                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
-                  showOptionsButton={false}
-                  showAvatar={false}
-                  userCard={styles.userCard}
-                />
-                <ChatHead
+                <ChatBox
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
-                  message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                  message=" Base Camp on ay 18."
+                  onClick={this.onclickEllipsis}
                 />
-                <ChatHead
-                  cardWidth={styles.cardWidth}
-                  message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
-                  showOptionsButton={false}
-                  showAvatar={false}
-                  userCard={styles.userCard}
-                />
-                <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message=" Base Camp on ay 18." />
-                <div className={styles.bufferZone} />
+                {/*<Icon type="ellipsis" onClick={this.onclickEllipsis} />*/}
+                {/*</ChatBox>*/}
+                {/*<div className={styles.bufferZone} />*/}
               </div>
 
               <div className={styles.chatInput}>

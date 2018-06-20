@@ -10,9 +10,11 @@ import CreateConv from './modules/practice/pages/CreateConv';
 import ConvEmptyO from './modules/practice/pages/ConvEmptyO';
 import ConvEmptyI from './modules/practice/pages/ConvEmptyI';
 import ConvWebEmpty from './modules/practice/pages/ConvWebEmpty';
-// import ActivitiesEmpty from './modules/practice/pages/ActivitiesEmpty';
-// import ActivitiesHome from './modules/practice/pages/ActivitiesHome';
-// import ActivitiesRecord from './modules/practice/pages/ActivitiesRecord';
+import ActivitiesEmpty from './modules/practice/pages/ActivitiesEmpty';
+import ActivitiesHome from './modules/practice/pages/ActivitiesHome';
+import ActivitiesRecord from './modules/practice/pages/ActivitiesRecord';
+import ProfileActivities from './modules/practice/pages/ProfileActivities';
+import ProfileDevices from './modules/practice/pages/ProfileDevices';
 import './App.scss';
 
 export default () => (
@@ -26,9 +28,11 @@ export default () => (
       <Route exact path="/ConvEmptyI" component={ConvEmptyI} />
       <Route exact path="/CreateConv" component={CreateConv} />
       <Route exact path="/ConvWebEmpty" component={ConvWebEmpty} />
-      {/* <Route exact path="/ActivitiesEmpty" component={ActivitiesEmpty} />
+      <Route exact path="/ActivitiesEmpty" component={ActivitiesEmpty} />
       <Route exact path="/ActivitiesHome" component={ActivitiesHome} />
-      <Route exact path="/ActivitiesRecord" component={ActivitiesRecord} /> */}
+      <Route exact path="/ActivitiesRecord" component={ActivitiesRecord} />
+      <Route exact path="/ProfileActivities" component={ProfileActivities} />
+      <Route exact path="/ProfileDevices" component={ProfileDevices} />
     </div>
   </Router>
 );

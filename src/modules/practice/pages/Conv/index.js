@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
-// import classnames from 'classnames';
 import Layout from '../../../common/organisms/Layout';
-import ChatHead from '../../../common/molecules/ChatHead';
+import ChatBox from '../../../common/molecules/ChatBox';
 import InputBox from '../../../common/atoms/InputBox';
 import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
@@ -31,62 +30,62 @@ class Conv extends React.Component {
           <Header />
           <PageTitle showIcon={true} text="Conversation with Kabir Pokharel" />
           <div className={styles.chatBody}>
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               name="Bipin Bhandari"
               message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
               showOptionsButton={false}
               showAvatar={false}
               userCard={styles.userCard}
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
               showOptionsButton={false}
               showAvatar={false}
               userCard={styles.userCard}
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               name="Bipin Bhandari"
               message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               name="Bipin Bhandari"
               message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
               showOptionsButton={false}
               showAvatar={false}
               userCard={styles.userCard}
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
               showOptionsButton={false}
               showAvatar={false}
               userCard={styles.userCard}
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               name="Bipin Bhandari"
               message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
             />
-            <ChatHead
+            <ChatBox
               cardWidth={styles.cardWidth}
               message="sdfkajsodk sdlfjas df sf alf sf s ff sdfjsdlkf f sadf sdf sd sdjfsldfkj sdf sdf sdf sdjffdf asdfjasd"
               showOptionsButton={false}
               showAvatar={false}
               userCard={styles.userCard}
             />
-            <ChatHead cardWidth={styles.cardWidth} name="Bipin Bhandari" message=" Base Camp on ay 18." />
+            <ChatBox cardWidth={styles.cardWidth} name="Bipin Bhandari" message=" Base Camp on ay 18." />
             <div className={styles.bufferZone} />
           </div>
 
