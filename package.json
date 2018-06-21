@@ -1,7 +1,7 @@
 {
   "name": "edumonk-components",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.10",
+  "main": "./lib",
   "author": "Bipin Bhandari",
   "license": "MIT",
   "scripts": {
@@ -21,7 +21,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "transpile":
-      "BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
+      "rm -rf lib && BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
     "prepublishOnly": "npm run transpile"
   },
   "lint-staged": {
@@ -29,19 +29,23 @@
     "*.{json,md,scss}": ["prettier --write", "git add"]
   },
   "peerDependencies": {
+    "antd": "^3.4.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "styled-components": "^3.2.6",
-    "antd": "^3.4.4"
+    "styled-components": "^3.2.6"
   },
   "dependencies": {
+    "antd": "^3.6.3",
     "autoprefixer": "^8.4.1",
     "classnames": "^2.2.5",
     "node-sass": "^4.9.0",
     "postcss-modules": "^1.1.0",
     "prop-types": "^15.6.1",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-router-dom": "^4.3.1",
     "src": "^1.1.2"
   },
   "devDependencies": {

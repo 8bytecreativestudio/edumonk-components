@@ -13,8 +13,6 @@ uploads/
 dist/
 # .env
 
-
-
 # OSX
 #
 .DS_Store

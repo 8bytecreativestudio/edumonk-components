@@ -1,7 +1,10 @@
 import React from 'react';
 import { Button } from 'antd';
 import Layout from '../../../common/organisms/Layout';
-import ChatBox from '../../../common/molecules/ChatBox';
+// import ChatBox from '../../../common/molecules/ChatBox';
+
+import '../../../../../lib/stylesheets/combined.css';
+import ChatBox from '../../../../../lib/molecules/ChatBox';
 import InputBox from '../../../common/atoms/InputBox';
 import Header from '../../../common/molecules/Header';
 import PageTitle from '../../../common/molecules/PageTitle';
