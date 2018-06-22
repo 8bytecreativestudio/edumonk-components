@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Button } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import CardUni from '../../../common/atoms/CardUni';
+import CardUni from '../../atoms/CardUni';
 import ProfileInfo from '../../molecules/ProfileInfo';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
