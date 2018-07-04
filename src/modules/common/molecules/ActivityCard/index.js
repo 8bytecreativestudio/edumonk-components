@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Button } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import CardUni from '../../../common/atoms/CardUni';
+import Card from '../../atoms/Card';
 import ProfileInfo from '../../molecules/ProfileInfo';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
@@ -17,8 +17,8 @@ const ActivityCard = ({
   customCardHeading,
   cardWidth,
   displayTag,
+  className,
   status,
-  styleTag,
   color,
   displayClock,
   timeFont,
@@ -27,7 +27,7 @@ const ActivityCard = ({
   info
 }) => {
   return (
-    <CardUni card={styles.card} userCard={userCard} cardWidth={cardWidth}>
+    <Card card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
         <div>
           <Avatar icon="user" />
@@ -36,7 +36,7 @@ const ActivityCard = ({
           <CardHeading className={customCardHeading}>{name}</CardHeading>
           {displayTag && (
             <span>
-              <Tag color={color} text={status} styleTag={styleTag} />
+              <Tag color={color} text={status} className={className} />
             </span>
           )}
           <P className={classnames(styles.greyP, timeFont)} displayClock={displayClock}>
@@ -60,7 +60,7 @@ const ActivityCard = ({
           <ProfileInfo name="Activities Details" info={info} />
         </div>
       )}
-    </CardUni>
+    </Card>
   );
 };
 

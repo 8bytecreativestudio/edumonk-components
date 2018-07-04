@@ -1,14 +1,14 @@
 import React from 'react';
 import { Avatar, Icon } from 'antd';
 import PropTypes from 'prop-types';
-import CardUni from '../../../common/atoms/CardUni';
+import Card from '../../atoms/Card';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
 import P from '../../atoms/P';
 
 const ChatBox = ({ name, message, showEllipsis, onClick, userCard, customCardHeading, cardWidth, showAvatar }) => {
   return (
-    <CardUni card={styles.card} userCard={userCard} cardWidth={cardWidth}>
+    <Card card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
         {showAvatar && (
           <div>
@@ -25,7 +25,7 @@ const ChatBox = ({ name, message, showEllipsis, onClick, userCard, customCardHea
           </div>
         )}
       </div>
-    </CardUni>
+    </Card>
   );
 };
 

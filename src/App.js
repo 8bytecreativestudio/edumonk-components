@@ -15,6 +15,8 @@ import ActivitiesHome from './modules/practice/pages/ActivitiesHome';
 import ActivitiesRecord from './modules/practice/pages/ActivitiesRecord';
 import ProfileActivities from './modules/practice/pages/ProfileActivities';
 import ProfileDevices from './modules/practice/pages/ProfileDevices';
+import ProfileTeacher from './modules/practice/pages/ProfileTeacher';
+import ConvTrial from './modules/practice/pages/ConvTrial';
 import './App.scss';
 
 export default () => (
@@ -33,6 +35,8 @@ export default () => (
       <Route exact path="/ActivitiesRecord" component={ActivitiesRecord} />
       <Route exact path="/ProfileActivities" component={ProfileActivities} />
       <Route exact path="/ProfileDevices" component={ProfileDevices} />
+      <Route exact path="/ProfileTeacher" component={ProfileTeacher} />
+      <Route exact path="/ConvTrial" component={ConvTrial} />
     </div>
   </Router>
 );

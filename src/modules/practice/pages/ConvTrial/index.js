@@ -3,27 +3,27 @@ import { Input, Icon } from 'antd';
 import Layout from '../../../common/organisms/Layout';
 import ChatBox from '../../../common/molecules/ChatBox';
 import History from '../../../common/molecules/History';
-import Header from '../../../common/molecules/Header';
-import PageTitle from '../../../common/molecules/PageTitle';
 
 import styles from './index.scss';
 
 const Search = Input.Search;
 
-class SecondPage extends React.Component {
+class ConvTrial extends React.Component {
   state = {
     text: '',
     search: ''
   };
-  updateText = text => {
-    this.setState({ text });
-  };
+
+  // updateText = text => {
+  //   this.setState({ text });
+  // };
   searchText = search => {
     this.setState({ search });
   };
-  onclickEllipsis = () => {
-    return;
-  };
+  // onclickEllipsis = () => {
+  //   return;
+  // };
+
   render() {
     const breadcrumbs = [
       {
@@ -31,20 +31,28 @@ class SecondPage extends React.Component {
       },
       {
         to: '/institutions',
-        label: 'second Page'
+        label: 'second page dup'
       }
     ];
     return (
       <Layout breadcrumbs={breadcrumbs}>
-        <div className={styles.one}>
-          <Header />
-          <PageTitle showButton={true} />
-          <div className={styles.mainBody}>
-            <div className={styles.conversationPanel}>
+        <div className={styles.container}>
+          <div className={styles.container__userCard}>
+            <div className={styles.userCard__input}>
               <Search
                 placeholder="search conversation"
                 onChange={e => this.searchText(e.target.value)}
                 style={{ padding: '0.3rem', width: '100%' }}
+              />
+            </div>
+            <div className={styles.userCard__card}>
+              <History
+                status="PARENT"
+                className={styles.historyCard}
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
+                showTime={true}
               />
               <History
                 status="PARENT"
@@ -57,31 +65,106 @@ class SecondPage extends React.Component {
               <History
                 status="PARENT"
                 className={styles.historyCard}
-                name="Ram Poudel"
-                message="a quick brown jumped"
-                time="10 minutes ago"
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
                 showTime={true}
               />
               <History
                 status="PARENT"
                 className={styles.historyCard}
-                name="Gopal Rimal"
-                message="a quick brown"
-                time="45 minutes ago"
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
                 showTime={true}
               />
               <History
                 status="PARENT"
                 className={styles.historyCard}
-                name="Dharmaraj Prasad Pandey"
-                message="a quick brown fox jumped over the lazy dog"
-                time="22 minutes ago"
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
+                showTime={true}
+              />
+              <History
+                status="PARENT"
+                className={styles.historyCard}
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
+                showTime={true}
+              />
+
+              <History
+                status="PARENT"
+                className={styles.historyCard}
+                name="Hari Aryal"
+                message="a quick brown fox jumped"
+                time="20 minutes ago"
                 showTime={true}
               />
             </div>
-            <div className={styles.chatBody}>
-              <div>
-                <ChatBox
+          </div>
+          <div className={styles.container__chat}>
+            <div className={styles.chat__conversation}>
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                name="Bipin Bhandari"
+                message=" Base Camp on ay 18, that makes them slightly radioactive. But it’s nothing you need to worry about. You’d need to eat 10,000,000 bananas at once to die of radiation poisoning."
+                showEllipsis={true}
+                onClick={this.onclickEllipsis}
+              />
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                message="Bananas contain potassium, o eat 10,000,000 bananas at once to die of radiation poisoning. I twill be 10 days trek and we will return by 201233"
+                showOptionsButton={false}
+                showAvatar={false}
+                userCard={styles.userCard}
+              />
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                message="Bananas contain potassium"
+                showOptionsButton={false}
+                showAvatar={false}
+                userCard={styles.userCard}
+              />
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                name="Bipin Bhandari"
+                message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                showEllipsis={true}
+                onClick={this.onclickEllipsis}
+              />
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                message="Bananas contain potassium, and since potassium decays, that makes them slightly radioactive. But it’s nothing you need to worry about. You’d need to eat 10,000,000 bananas at once to die of radiation poisoning"
+                showOptionsButton={false}
+                showAvatar={false}
+                userCard={styles.userCard}
+              />
+              <ChatBox
+                cardWidth={styles.cardWidth}
+                name="Bipin Bhandari"
+                message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
+                showEllipsis={true}
+                onClick={this.onclickEllipsis}
+              />
+            </div>
+            <div className={styles.chat__input}>
+              <Input addonAfter={<Icon style={{ fontSize: 18, color: '#08c' }} type="caret-right" />} />
+            </div>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
+}
+
+export default ConvTrial;
+
+{
+  /* <div>
+          <ChatBox
                   cardWidth={styles.cardWidth}
                   name="Bipin Bhandari"
                   message=" Base Camp on ay 18. I twill be 10 days trek and we will return by 201233."
@@ -150,18 +233,5 @@ class SecondPage extends React.Component {
                   message=" Base Camp on ay 18."
                   onClick={this.onclickEllipsis}
                 />
-                <div className={styles.chatInput}>
-                  <div className={styles.inputBox}>
-                    <Input addonAfter={<Icon type="caret-right" style={{ fontSize: 16, color: '#08c' }} />} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+               </div> */
 }
-
-export default SecondPage;

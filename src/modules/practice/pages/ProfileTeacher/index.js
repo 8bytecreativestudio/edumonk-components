@@ -12,7 +12,7 @@ import TabGroup from '../../../common/molecules/TabGroup';
 import Tag from '../../../common/atoms/Tag';
 
 const { TabPane } = Tabs;
-class ProfileDevices extends React.Component {
+class ProfileTeacher extends React.Component {
   state = {
     text: '',
     search: '',
@@ -23,7 +23,7 @@ class ProfileDevices extends React.Component {
         'Landline Number': '012343543',
         'Email Address': 'kabirpokharel12@gmail.com'
       },
-      { name: 'Hari Sharma**', displayTag: true, time: 'Active 2 hours ago' }
+      { name: 'Sirish Shrestha', displayTag: true, time: 'Active 2 hours ago', status: 'TEACHER' }
     ]
   };
   updateText = text => {
@@ -43,24 +43,24 @@ class ProfileDevices extends React.Component {
       },
       {
         to: '/institutions',
-        label: 'ProfileDevices'
+        label: 'ProfileTeacher'
       }
     ];
     return (
       <Layout breadcrumbs={breadcrumbs}>
         <div className={styles.one}>
           <Header />
-          <PageTitle text="Dashboard" showIcon="true" />
+          <PageTitle text="Profile" showIcon="true" />
           <div className={styles.mainBody}>
             <ActivityCard
               name={this.state.info[1].name}
-              status="PARENT"
+              status={this.state.info[1].status}
               message={this.state.info[1].time}
               displayClock={true}
               info={this.state.info}
               infoFooter={true}
               displayTag={this.state.info[1].displayTag}
-              color="#ff5b6f"
+              color="#f39c12"
             />
 
             <div className={styles.tabs}>
@@ -78,7 +78,6 @@ class ProfileDevices extends React.Component {
                       message="Link Token"
                       displayTag={true}
                       status="PENDING"
-                      className={styles.styleTag}
                       color="#4a90e2"
                     >
                       <Icon type="ellipsis" />
@@ -88,7 +87,6 @@ class ProfileDevices extends React.Component {
                       message="Kindergarten II"
                       displayTag={true}
                       status="ACTIVE"
-                      className={styles.styleTag}
                       color="#2ecc71"
                     />
                     <Card card={styles.card}>
@@ -107,7 +105,6 @@ class ProfileDevices extends React.Component {
                       displayClock={true}
                       displayTag={true}
                       status="PENDING"
-                      className={styles.styleTag}
                       color="#4a90e2"
                     >
                       <Icon type="ellipsis" />
@@ -134,4 +131,4 @@ class ProfileDevices extends React.Component {
   }
 }
 
-export default ProfileDevices;
+export default ProfileTeacher;
