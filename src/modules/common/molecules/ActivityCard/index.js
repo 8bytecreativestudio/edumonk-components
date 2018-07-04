@@ -56,7 +56,7 @@ const ActivityCard = ({
         <div className={styles.rightContent}>{children}</div>
       </div>
       {infoFooter && (
-        <div>
+        <div className={styles.infoFooter}>
           <ProfileInfo name="Activities Details" info={info} />
         </div>
       )}

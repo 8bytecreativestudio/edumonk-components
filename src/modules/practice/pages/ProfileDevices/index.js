@@ -18,12 +18,12 @@ class ProfileDevices extends React.Component {
     search: '',
     info: [
       {
-        Address: 'Patan',
-        'Primary Phone Number': '9843135754',
-        'Landline Number': '012343543',
-        'Email Address': 'kabirpokharel12@gmail.com'
+        'Address:': 'Patan',
+        'mob:': '9843135754',
+        'Tel:': '012343543',
+        'e-mail:': 'kabirpokharel12@gmail11111111111111111111111111111111111111.com'
       },
-      { name: 'Hari Sharma**', displayTag: true, time: 'Active 2 hours ago' }
+      { name: 'Hari Sharma', displayTag: true, time: 'Active 2 hours ago' }
     ]
   };
   updateText = text => {
@@ -55,6 +55,7 @@ class ProfileDevices extends React.Component {
             <ActivityCard
               name={this.state.info[1].name}
               status="PARENT"
+              className={styles.styleTag}
               message={this.state.info[1].time}
               displayClock={true}
               info={this.state.info}
@@ -62,7 +63,6 @@ class ProfileDevices extends React.Component {
               displayTag={this.state.info[1].displayTag}
               color="#ff5b6f"
             />
-
             <div className={styles.tabs}>
               <Tabs defaultActiveKey="3">
                 <TabPane tab={<span>Children</span>} key="1">
