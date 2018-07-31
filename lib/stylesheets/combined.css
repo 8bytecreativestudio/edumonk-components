@@ -1,7 +1,7 @@
 /*  imported from index.scss  */
 
 .index__cardHeading___SZ_nn {
-  font-size: 0.875px;
+  font-size: 0.875rem;
   font-weight: 600; }
 /*  imported from index.scss  */
 
@@ -9,30 +9,46 @@
   font-size: 0.75rem; }
 /*  imported from index.scss  */
 
-.index__tagStyle___Ptu74 {
-  background-color: #ff5b6f;
-  font-size: 0.625rem;
-  color: white;
-  border-radius: 3.125rem;
-  padding: 0.125rem 0.5rem; }
-/*  imported from index.scss  */
-
-.index__card___1wef4 {
+.index__card___bVdFc {
   box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   margin: 0.4rem; }
-  .index__card___1wef4 .index__body___uhPdx {
+  .index__card___bVdFc .index__body___2jQ6O {
     display: flex; }
-    .index__card___1wef4 .index__body___uhPdx .index__cardHeading___1Qvqo {
+    .index__card___bVdFc .index__body___2jQ6O .index__cardHeading___3lJ1m {
       font-size: 0.875rem; }
-    .index__card___1wef4 .index__body___uhPdx .index__midContent___2klu9 {
+    .index__card___bVdFc .index__body___2jQ6O .index__midContent___lPKu3 {
       margin-left: 1rem; }
-    .index__card___1wef4 .index__body___uhPdx .index__rightContent___1SmXi {
+    .index__card___bVdFc .index__body___2jQ6O .index__rightContent___sEFAC {
       display: flex;
       flex: 1;
       flex-direction: row-reverse; }
 
-.index__card___1wef4 .index__self___f1whQ {
+.index__card___bVdFc .index__self___3m1kn {
   background-color: #f3f3f3; }
+
+.index__greyP___3U-3y {
+  color: #9b9b9b; }
+/*  imported from index.scss  */
+
+.index__card___3LBp_ {
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  margin: 0.4rem; }
+  .index__card___3LBp_ .index__body___F0eId {
+    display: flex; }
+    .index__card___3LBp_ .index__body___F0eId .index__cardHeading___3IY6A {
+      font-size: 0.875rem; }
+    .index__card___3LBp_ .index__body___F0eId .index__midContent___33eh2 {
+      margin-left: 1rem; }
+    .index__card___3LBp_ .index__body___F0eId .index__rightContent___1lSfk {
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse; }
+
+.index__card___3LBp_ .index__self___Vn6G8 {
+  background-color: #f3f3f3; }
+
+.index__greyP___2Nfjh {
+  color: #9b9b9b; }
 /*  imported from index.scss  */
 
 .index__header___10GSN {
@@ -72,6 +88,9 @@
     display: flex;
     justify-content: center;
     align-self: center; }
+
+.index__greyP___fMgyJ {
+  color: #9b9b9b; }
 /*  imported from index.scss  */
 
 .index__conversation___3SdtN {
@@ -84,6 +103,33 @@
   .index__conversation___3SdtN .index__alignItems___2fmGG {
     display: flex;
     align-items: center; }
+/*  imported from index.scss  */
+
+.index__info___eat4g {
+  margin-top: 0.9375rem;
+  line-height: 1.5; }
+  .index__info___eat4g .index__hr___1RE4F {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.9375rem; }
+  .index__info___eat4g .index__info__name___3cdi8 {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.9375rem; }
+  .index__info___eat4g .index__info__content___2MIt0 {
+    display: flex;
+    font-size: 0.75rem; }
+    .index__info___eat4g .index__info__content___2MIt0 .index__info__content__left___1Of1E {
+      flex: 1;
+      text-align: right;
+      padding-right: 0.33rem;
+      color: #9b9b9b; }
+    .index__info___eat4g .index__info__content___2MIt0 .index__info__content__right___2fH5W {
+      flex: 1;
+      padding-left: 0.33rem; }
+/*  imported from index.scss  */
+
+.index__first___mXt6S {
+  color: red; }
 /*  imported from index.scss  */
 
 .index__logo___17LpP {

@@ -1,7 +1,7 @@
 {
   "name": "edumonk-components",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "./lib",
   "author": "Bipin Bhandari",
   "license": "MIT",
   "scripts": {
@@ -21,7 +21,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "transpile":
-      "BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
+      "rm -rf lib && BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
     "prepublishOnly": "npm run transpile"
   },
   "lint-staged": {

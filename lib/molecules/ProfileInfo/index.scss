@@ -1,0 +1,27 @@
+.info {
+  margin-top: 0.9375rem;
+  line-height: 1.5;
+  .hr {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.9375rem;
+  }
+  .info__name {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.9375rem;
+  }
+  .info__content {
+    display: flex;
+    font-size: 0.75rem;
+    .info__content__left {
+      flex: 1;
+      text-align: right;
+      padding-right: 0.33rem;
+      color: #9b9b9b;
+    }
+    .info__content__right {
+      flex: 1;
+      padding-left: 0.33rem;
+    }
+  }
+}
