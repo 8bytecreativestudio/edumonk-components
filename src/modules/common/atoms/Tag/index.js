@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tag as AntTag } from 'antd';
 
-const Tag = ({ text, styleTag, color }) => (
+const Tag = ({ text, styleTag, color, className }) => (
   <span className={styleTag}>
-    <AntTag color={color}>{text}</AntTag>
+    <AntTag className={className} color={color}>
+      {text}
+    </AntTag>
   </span>
 );
 

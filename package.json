@@ -1,6 +1,6 @@
 {
   "name": "edumonk-components",
-  "version": "1.0.11",
+  "version": "1.0.2",
   "main": "./lib",
   "author": "Bipin Bhandari",
   "license": "MIT",

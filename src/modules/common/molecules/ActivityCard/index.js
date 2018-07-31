@@ -2,8 +2,9 @@ import React from 'react';
 import { Avatar, Button } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import CardUni from '../../atoms/CardUni';
+import Card from '../../atoms/Card';
 import ProfileInfo from '../../molecules/ProfileInfo';
+import GeneralInfo from '../../molecules/GeneralInfo';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
 import P from '../../atoms/P';
@@ -11,32 +12,38 @@ import Tag from '../../atoms/Tag';
 
 const ActivityCard = ({
   children,
+  showAvatar,
   name,
   message,
   userCard,
   customCardHeading,
   cardWidth,
   displayTag,
+  className,
   status,
-  styleTag,
   color,
   displayClock,
   timeFont,
   YesNoButton,
   infoFooter,
+  infoPara,
+  footerTopic,
+  infoParaContent,
   info
 }) => {
   return (
-    <CardUni card={styles.card} userCard={userCard} cardWidth={cardWidth}>
+    <Card card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
-        <div>
-          <Avatar icon="user" />
-        </div>
+        {showAvatar && (
+          <div>
+            <Avatar icon="user" />
+          </div>
+        )}
         <div className={styles.midContent}>
           <CardHeading className={customCardHeading}>{name}</CardHeading>
           {displayTag && (
             <span>
-              <Tag color={color} text={status} styleTag={styleTag} />
+              <Tag color={color} text={status} className={className} />
             </span>
           )}
           <P className={classnames(styles.greyP, timeFont)} displayClock={displayClock}>
@@ -56,11 +63,16 @@ const ActivityCard = ({
         <div className={styles.rightContent}>{children}</div>
       </div>
       {infoFooter && (
-        <div>
-          <ProfileInfo name="Activities Details" info={info} />
+        <div className={styles.infoFooter}>
+          <ProfileInfo name={footerTopic} info={info} />
         </div>
       )}
-    </CardUni>
+      {infoPara && (
+        <div className={styles.infoFooter}>
+          <GeneralInfo footerTopic={footerTopic} infoParaContent={infoParaContent} />
+        </div>
+      )}
+    </Card>
   );
 };
 
@@ -71,6 +83,7 @@ ActivityCard.propTypes = {
 
 ActivityCard.defaultProps = {
   showOptionsButton: true,
+  showAvatar: true,
   YesNoButton: false,
   infoFooter: false,
   displayTag: false

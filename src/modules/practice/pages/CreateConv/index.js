@@ -36,12 +36,12 @@ class CreateConv extends React.Component {
                 onChange={e => this.searchText(e.target.value)}
                 style={{ padding: '0.3rem', width: '100%' }}
               />
-              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" radioButton={true} />
-              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" radioButton={true} />
-              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" radioButton={true} />
-              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" radioButton={true} />
-              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" radioButton={true} />
-              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" radioButton={true} />
+              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" showRadioButton={true} />
+              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" showRadioButton={true} />
+              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" showRadioButton={true} />
+              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" showRadioButton={true} />
+              <History status="PARENT" name="Hari Aryal" message="a quick brown fox jumped" showRadioButton={true} />
+              <History status="PARENT" name="Ram Poudel" message="a quick brown jumped" showRadioButton={true} />
             </div>
           </div>
           <div className={styles.bufferZone} />

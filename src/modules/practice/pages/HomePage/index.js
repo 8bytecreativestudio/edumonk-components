@@ -30,6 +30,10 @@ class HomePage extends React.Component {
           <a href="/ProfileActivities">ProfileActivities</a>
           <br />
           <a href="/ProfileDevices">ProfileDevices</a>
+          <br />
+          <a href="/ProfileTeacher">ProfileTeacher</a>
+          <br />
+          <a href="/ConvTrial">ConvTrial</a>
         </div>
       </div>
     );

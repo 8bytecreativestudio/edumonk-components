@@ -12,18 +12,18 @@ import TabGroup from '../../../common/molecules/TabGroup';
 import Tag from '../../../common/atoms/Tag';
 
 const { TabPane } = Tabs;
-class ProfileDevices extends React.Component {
+class ProfileTeacher extends React.Component {
   state = {
     text: '',
     search: '',
     info: [
       {
-        'Address:': 'Patan',
-        'mob:': '9843135754',
-        'Tel:': '012343543',
-        'e-mail:': 'kabirpokharel12@gmail11111111111111111111111111111111111111.com'
+        Address: 'Patan',
+        'Primary Phone Number': '9843135754',
+        'Landline Number': '012343543',
+        'Email Address': 'kabirpokharel12@gmail.com'
       },
-      { name: 'Hari Sharma', displayTag: true, footerTopic: 'User Details', time: 'Active 2 hours ago' }
+      { name: 'Sirish Shrestha', displayTag: true, time: 'Active 2 hours ago', status: 'TEACHER' }
     ]
   };
   updateText = text => {
@@ -43,44 +43,26 @@ class ProfileDevices extends React.Component {
       },
       {
         to: '/institutions',
-        label: 'ProfileDevices'
+        label: 'ProfileTeacher'
       }
     ];
     return (
       <Layout breadcrumbs={breadcrumbs}>
         <div className={styles.one}>
           <Header />
-          <PageTitle text="Dashboard" showIcon="true" />
+          <PageTitle text="Profile" showIcon="true" />
           <div className={styles.mainBody}>
             <ActivityCard
               name={this.state.info[1].name}
-              status="MAY 11"
-              className={styles.styleTag}
+              status={this.state.info[1].status}
               message={this.state.info[1].time}
-              displayClock={false}
+              displayClock={true}
               info={this.state.info}
               infoFooter={true}
               displayTag={this.state.info[1].displayTag}
-              footerTopic={this.state.info[1].footerTopic}
-              // styleTag={'styleTag'}
-              color="#ff5b6f"
+              color="#f39c12"
             />
-            <ActivityCard
-              showAvatar={false}
-              name={'Ram Nawami'}
-              status="MAY 11"
-              className={styles.styleTag}
-              message={'Public Holiday'}
-              displayClock={false}
-              info={this.state.info}
-              infoFooter={false}
-              infoPara={true}
-              infoParaContent="School will remain closed on the occasion of Ram Nawam.School will resume form May 11. Thank you."
-              displayTag={this.state.info[1].displayTag}
-              footerTopic={'Happy Ram Nawami'}
-              // styleTag={'styleTag'}
-              color="#ff5b6f"
-            />
+
             <div className={styles.tabs}>
               <Tabs defaultActiveKey="3">
                 <TabPane tab={<span>Children</span>} key="1">
@@ -96,7 +78,6 @@ class ProfileDevices extends React.Component {
                       message="Link Token"
                       displayTag={true}
                       status="PENDING"
-                      className={styles.styleTag}
                       color="#4a90e2"
                     >
                       <Icon type="ellipsis" />
@@ -106,7 +87,6 @@ class ProfileDevices extends React.Component {
                       message="Kindergarten II"
                       displayTag={true}
                       status="ACTIVE"
-                      className={styles.styleTag}
                       color="#2ecc71"
                     />
                     <Card card={styles.card}>
@@ -125,7 +105,6 @@ class ProfileDevices extends React.Component {
                       displayClock={true}
                       displayTag={true}
                       status="PENDING"
-                      className={styles.styleTag}
                       color="#4a90e2"
                     >
                       <Icon type="ellipsis" />
@@ -152,4 +131,4 @@ class ProfileDevices extends React.Component {
   }
 }
 
-export default ProfileDevices;
+export default ProfileTeacher;

@@ -1,10 +1,11 @@
 import React from 'react';
+import classnames from 'classnames';
 import CardHeading from '../../atoms/CardHeading';
 import styles from './index.scss';
 
-const ProfileInfo = ({ name, info }) => {
+const ProfileInfo = ({ name, info, className }) => {
   return (
-    <div className={styles.info}>
+    <div className={classnames(styles.info, className)}>
       <div className={styles.hr} />
       <CardHeading className={styles.info__name}>{name}</CardHeading>
       <div className={styles.info__content}>
