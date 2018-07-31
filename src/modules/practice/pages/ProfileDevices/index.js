@@ -23,7 +23,7 @@ class ProfileDevices extends React.Component {
         'Tel:': '012343543',
         'e-mail:': 'kabirpokharel12@gmail11111111111111111111111111111111111111.com'
       },
-      { name: 'Hari Sharma', displayTag: true, time: 'Active 2 hours ago' }
+      { name: 'Hari Sharma', displayTag: true, footerTopic: 'User Details', time: 'Active 2 hours ago' }
     ]
   };
   updateText = text => {
@@ -54,13 +54,31 @@ class ProfileDevices extends React.Component {
           <div className={styles.mainBody}>
             <ActivityCard
               name={this.state.info[1].name}
-              status="PARENT"
+              status="MAY 11"
               className={styles.styleTag}
               message={this.state.info[1].time}
-              displayClock={true}
+              displayClock={false}
               info={this.state.info}
               infoFooter={true}
               displayTag={this.state.info[1].displayTag}
+              footerTopic={this.state.info[1].footerTopic}
+              // styleTag={'styleTag'}
+              color="#ff5b6f"
+            />
+            <ActivityCard
+              showAvatar={false}
+              name={'Ram Nawami'}
+              status="MAY 11"
+              className={styles.styleTag}
+              message={'Public Holiday'}
+              displayClock={false}
+              info={this.state.info}
+              infoFooter={false}
+              infoPara={true}
+              infoParaContent="School will remain closed on the occasion of Ram Nawam.School will resume form May 11. Thank you."
+              displayTag={this.state.info[1].displayTag}
+              footerTopic={'Happy Ram Nawami'}
+              // styleTag={'styleTag'}
               color="#ff5b6f"
             />
             <div className={styles.tabs}>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Card from '../../atoms/Card';
 import ProfileInfo from '../../molecules/ProfileInfo';
+import GeneralInfo from '../../molecules/GeneralInfo';
 import styles from './index.scss';
 import CardHeading from '../../atoms/CardHeading';
 import P from '../../atoms/P';
@@ -11,6 +12,7 @@ import Tag from '../../atoms/Tag';
 
 const ActivityCard = ({
   children,
+  showAvatar,
   name,
   message,
   userCard,
@@ -24,14 +26,19 @@ const ActivityCard = ({
   timeFont,
   YesNoButton,
   infoFooter,
+  infoPara,
+  footerTopic,
+  infoParaContent,
   info
 }) => {
   return (
     <Card card={styles.card} userCard={userCard} cardWidth={cardWidth}>
       <div className={styles.body}>
-        <div>
-          <Avatar icon="user" />
-        </div>
+        {showAvatar && (
+          <div>
+            <Avatar icon="user" />
+          </div>
+        )}
         <div className={styles.midContent}>
           <CardHeading className={customCardHeading}>{name}</CardHeading>
           {displayTag && (
@@ -57,7 +64,12 @@ const ActivityCard = ({
       </div>
       {infoFooter && (
         <div className={styles.infoFooter}>
-          <ProfileInfo name="Activities Details" info={info} />
+          <ProfileInfo name={footerTopic} info={info} />
+        </div>
+      )}
+      {infoPara && (
+        <div className={styles.infoFooter}>
+          <GeneralInfo footerTopic={footerTopic} infoParaContent={infoParaContent} />
         </div>
       )}
     </Card>
@@ -71,6 +83,7 @@ ActivityCard.propTypes = {
 
 ActivityCard.defaultProps = {
   showOptionsButton: true,
+  showAvatar: true,
   YesNoButton: false,
   infoFooter: false,
   displayTag: false
