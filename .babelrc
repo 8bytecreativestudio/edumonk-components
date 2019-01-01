@@ -1,6 +1,10 @@
 {
     "presets": ["env", "react", "es2017"],
-    "plugins": ["transform-class-properties", "transform-export-extensions"],
+    "plugins": [
+        "transform-class-properties", 
+        "transform-export-extensions", 
+        ["import", {"libraryName": "antd"}]
+    ],
     "env": {
         "transpile": {
             "plugins": [["css-modules-transform", {

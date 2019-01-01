@@ -1,6 +1,6 @@
 {
   "name": "edumonk-components",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "main": "./lib",
   "author": "Bipin Bhandari",
   "license": "MIT",
@@ -13,23 +13,27 @@
     "fix": "yarn fix:code && yarn fix:assets",
     "prettier": "prettier --ignore-path .gitignore  \"**/*.{json,md,scss}\"",
     "eslint": "eslint --fix",
-    "test:code":
-      "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
     "lint": "npm run eslint --fix --ext js --ext jsx --ext json .",
     "test": "jest",
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "transpile":
-      "rm -rf lib && BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
+    "transpile": "rm -rf lib && BABEL_ENV=transpile babel './src/modules/common' -d lib --copy-files",
     "prepublishOnly": "npm run transpile"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --fix", "git add"],
-    "*.{json,md,scss}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,md,scss}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "peerDependencies": {
-    "antd": "^3.4.4",
+    "antd": "^3.8.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
@@ -57,6 +61,7 @@
     "babel-core": "6",
     "babel-eslint": "^8.2.3",
     "babel-plugin-css-modules-transform": "^1.6.1",
+    "babel-plugin-import": "^1.8.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-polyfill": "^6.26.0",

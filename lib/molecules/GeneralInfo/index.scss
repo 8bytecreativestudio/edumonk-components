@@ -1,0 +1,21 @@
+@import '../../../theme/component.scss';
+
+.content {
+  margin-top: 0.9375rem;
+  line-height: 1.5;
+  .hr {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.9375rem;
+  }
+  .text {
+    padding-left: 16px;
+  }
+  .content__name {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.9375rem;
+  }
+  .content__notice {
+    font-size: 0.75rem;
+  }
+}

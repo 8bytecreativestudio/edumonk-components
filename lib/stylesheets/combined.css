@@ -23,11 +23,17 @@
       flex: 1;
       flex-direction: row-reverse; }
 
+.index__styleTag___1sqjE {
+  margin-left: 0.75rem; }
+
 .index__card___bVdFc .index__self___3m1kn {
   background-color: #f3f3f3; }
 
 .index__greyP___3U-3y {
   color: #9b9b9b; }
+
+.index__infoFooter___13xnw {
+  overflow-x: auto; }
 /*  imported from index.scss  */
 
 .index__card___3LBp_ {
@@ -49,6 +55,22 @@
 
 .index__greyP___2Nfjh {
   color: #9b9b9b; }
+/*  imported from index.scss  */
+
+.index__content___D2p1i {
+  margin-top: 0.9375rem;
+  line-height: 1.5; }
+  .index__content___D2p1i .index__hr___KHY7U {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0.9375rem; }
+  .index__content___D2p1i .index__text___1BEua {
+    padding-left: 16px; }
+  .index__content___D2p1i .index__content__name___2kqej {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 0.9375rem; }
+  .index__content___D2p1i .index__content__notice___3E62a {
+    font-size: 0.75rem; }
 /*  imported from index.scss  */
 
 .index__header___10GSN {
@@ -74,20 +96,22 @@
       display: flex; }
       .index__card___14WxM .index__body___1-hDn .index__toInline___1f7dl .index__name___2vyXQ {
         margin-right: 0.4rem;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         font-weight: bold; }
-  .index__card___14WxM .index__time___2panV {
-    color: #9b9b9b;
-    font-size: 0.6rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-  .index__card___14WxM .index__radioButton___3ML3w {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-self: center; }
+
+.index__time___2panV {
+  color: #9b9b9b;
+  font-size: 0.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.index__radioButton___3ML3w {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center; }
 
 .index__greyP___fMgyJ {
   color: #9b9b9b; }
